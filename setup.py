@@ -1,14 +1,17 @@
-#!/usr/bin/env python
-
 from setuptools import setup
 
-setup(
-    name='jfrog-python-example',
-    version='1.0',
-    description='Project example for building Python project with JFrog products',
-    author='JFrog',
-    author_email='jfrog@jfrog.com',
+setup (
+    name = 'jfrog-pypi-example',
+    version = '1.0.0',
+    description = 'Example PyPI package',
+    py_modules = ["main"],
+    package_dir = {'': 'src'},
+    author = 'JFrog',
+    author_email = 'jfrog@jfrog.com',
     url='https://github.com/jfrog/project-examples',
-    packages=['pythonExample'],
-    install_requires=['PyYAML>3.11', 'nltk'],
+    install_requires=[
+        'Django>=3.0',
+        'Flask>=1.0',
+        'MarkupSafe>=2.0',
+    ],
 )
