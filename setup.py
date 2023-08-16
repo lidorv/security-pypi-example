@@ -12,6 +12,5 @@ setup (
     install_requires=[
         'Django>=3.0',
         'Flask>=1.0',
-        'MarkupSafe>=2.0',
     ],
 )
